@@ -1,0 +1,18 @@
+Package: catfact
+Title: Get HTTP Cat Status Images
+Description: Get HTTP Cat Status Images.
+Version: 0.1.0
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"), 
+        email = "myrmecocystus@gmail.com")
+  )
+License: MIT + file LICENSE
+URL: https://github.com/sckott/catfact
+Roxygen: list(markdown = TRUE)
+Imports:
+    httr
+Suggests:
+    vcr,
+    testthat
+Remotes: ropensci/webmockr@adapter-httr, ropensci/vcr@httr-integration
+RoxygenNote: 6.0.1

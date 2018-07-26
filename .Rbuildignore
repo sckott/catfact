@@ -1,0 +1,16 @@
+man-roxygen
+^.*\.Rproj$
+^\.Rproj\.user$
+appveyor.yml
+.travis.yml
+cran-comments.md
+README.Rmd
+Makefile
+vignettes/img
+figure
+.github
+^CODE_OF_CONDUCT\.md$
+^revdep$
+^cran-comments\.md$
+^\.httr-oauth$
+^codemeta\.json$
