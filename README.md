@@ -1,31 +1,32 @@
 catfact
 =======
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(
-  comment = "#>",
-  collapse = TRUE,
-  warning = FALSE,
-  message = FALSE
-)
-```
+
 
 `catfact` package
 
 ## install
 
-```{r eval=FALSE}
+
+```r
 remotes::install_github("sckott/catfact")
 ```
 
-```{r}
+
+```r
 library(catfact)
 ```
 
 ## get a cat fact
 
-```{r}
+
+```r
 cat_fact()
+#> $fact
+#> [1] "Cats are the world's most popular pets, outnumbering dogs by as many as three to one"
+#> 
+#> $length
+#> [1] 84
 ```
 
 
