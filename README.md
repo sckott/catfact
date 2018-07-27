@@ -1,7 +1,7 @@
 catfact
 =======
 
-
+[![Build Status](https://travis-ci.org/sckott/catfact.svg?branch=master)](https://travis-ci.org/sckott/catfact)
 
 `catfact` package
 
