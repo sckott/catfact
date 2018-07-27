@@ -11,6 +11,8 @@
 #' cat_fact('asdf') # invalid max_length returns nothing
 #' }
 cat_fact <- function(max_length = NULL, ...) {
+  assert(max_length, c('integer', 'numeric'))
+
   args <- cp(list(max_length = max_length))
   res <- httr::GET("https://catfact.ninja/fact", query = args, ...)
   httr::stop_for_status(res)
@@ -18,3 +20,12 @@ cat_fact <- function(max_length = NULL, ...) {
 }
 
 cp <- function(x) Filter(Negate(is.null), x)
+
+assert <- function(x, y) {
+  if (!is.null(x)) {
+    if (!class(x)[1L] %in% y) {
+      stop(deparse(substitute(x)), " must be of class ",
+           paste0(y, collapse = ", "), call. = FALSE)
+    }
+  }
+}

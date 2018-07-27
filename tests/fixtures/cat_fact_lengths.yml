@@ -1,0 +1,123 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://catfact.ninja/fact?max_length=30
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status: ~
+    headers:
+      server: nginx
+      transfer-encoding: chunked
+      connection: keep-alive
+      vary: Accept-Encoding
+      cache-control: no-cache, private
+      date: Fri, 27 Jul 2018 01:55:17 GMT
+      x-ratelimit-limit: '300'
+      x-ratelimit-remaining: '296'
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      content-encoding: gzip
+      Content-Type: application/json
+    body:
+      encoding: UTF-8
+      string: '{"fact":"Female cats are \\polyestrous","length":28}'
+  recorded_at: 2018-07-27 01:57:06 GMT
+  recorded_with: vcr/0.1.0.9100, webmockr/0.2.6.9326
+- request:
+    method: get
+    uri: https://catfact.ninja/fact?max_length=80
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status: ~
+    headers:
+      server: nginx
+      transfer-encoding: chunked
+      connection: keep-alive
+      vary: Accept-Encoding
+      cache-control: no-cache, private
+      date: Fri, 27 Jul 2018 01:56:34 GMT
+      x-ratelimit-limit: '300'
+      x-ratelimit-remaining: '297'
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      content-encoding: gzip
+      Content-Type: application/json
+    body:
+      encoding: UTF-8
+      string: '{"fact":"An adult lion''s roar can be heard up to five miles (eight
+        kilometers) away.","length":75}'
+  recorded_at: 2018-07-27 01:57:06 GMT
+  recorded_with: vcr/0.1.0.9100, webmockr/0.2.6.9326
+- request:
+    method: get
+    uri: https://catfact.ninja/fact?max_length=120
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status: ~
+    headers:
+      server: nginx
+      transfer-encoding: chunked
+      connection: keep-alive
+      vary: Accept-Encoding
+      cache-control: no-cache, private
+      date: Fri, 27 Jul 2018 01:57:02 GMT
+      x-ratelimit-limit: '300'
+      x-ratelimit-remaining: '290'
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      content-encoding: gzip
+      Content-Type: application/json
+    body:
+      encoding: UTF-8
+      string: '{"fact":"A cat called Dusty has the known record for the most kittens.
+        She had more than 420 kittens in her lifetime.","length":108}'
+  recorded_at: 2018-07-27 01:57:06 GMT
+  recorded_with: vcr/0.1.0.9100, webmockr/0.2.6.9326
+- request:
+    method: get
+    uri: https://catfact.ninja/fact?max_length=300
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      server: nginx
+      transfer-encoding: chunked
+      connection: keep-alive
+      vary: Accept-Encoding
+      cache-control: no-cache, private
+      date: Fri, 27 Jul 2018 01:57:06 GMT
+      x-ratelimit-limit: '300'
+      x-ratelimit-remaining: '283'
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      content-encoding: gzip
+      Content-Type: application/json
+    body:
+      encoding: UTF-8
+      string: '{"fact":"Cats have been domesticated for half as long as dogs have
+        been.","length":63}'
+  recorded_at: 2018-07-27 01:57:06 GMT
+  recorded_with: vcr/0.1.0.9100, webmockr/0.2.6.9326
