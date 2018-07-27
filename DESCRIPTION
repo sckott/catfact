@@ -14,5 +14,5 @@ Imports:
 Suggests:
     vcr,
     testthat
-Remotes: ropensci/webmockr@adapter-httr, ropensci/vcr@httr-integration
+Remotes: ropensci/vcr@httr-integration
 RoxygenNote: 6.0.1
