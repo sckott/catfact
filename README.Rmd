@@ -14,6 +14,15 @@ knitr::opts_chunk$set(
 
 `catfact` package
 
+Get a random cat fact from the Cat Fact API <https://catfact.ninja/>
+
+
+----
+
+Package to demonstrate using [vcr][] for unit test caching in an R package that uses [httr][].
+
+[vcr][] was originally built with support only for the [crul][] package - we are working on support in `vcr` for both [httr][] and [curl][]
+
 ## install
 
 ```{r eval=FALSE}
@@ -31,3 +40,7 @@ cat_fact()
 ```
 
 
+[vcr]: https://github.com/ropensci/vcr
+[crul]: https://github.com/ropensci/crul
+[httr]: https://github.com/r-lib/httr
+[curl]: https://github.com/jeroen/curl
