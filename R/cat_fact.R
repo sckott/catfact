@@ -14,7 +14,7 @@ cat_fact <- function(max_length = NULL, ...) {
   args <- cp(list(max_length = max_length))
   res <- httr::GET("https://catfact.ninja/fact", query = args, ...)
   httr::stop_for_status(res)
-  httr::content(res)
+  httr::content(res, as = "parsed", encoding = "UTF-8")
 }
 
 cp <- function(x) Filter(Negate(is.null), x)

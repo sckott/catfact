@@ -8,5 +8,5 @@ test_that("cat_fact works", {
     expect_named(aa, c('fact', 'length'))
     expect_is(aa$fact, 'character')
     expect_type(aa$length, 'integer')
-  })  
+  })
 })

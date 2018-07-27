@@ -1,0 +1,33 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://catfact.ninja/fact
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      server: nginx
+      transfer-encoding: chunked
+      connection: keep-alive
+      vary: Accept-Encoding
+      cache-control: no-cache, private
+      date: Fri, 27 Jul 2018 01:25:10 GMT
+      x-ratelimit-limit: '300'
+      x-ratelimit-remaining: '298'
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      content-encoding: gzip
+      Content-Type: application/json
+    body:
+      encoding: UTF-8
+      string: '{"fact":"Cats spend nearly 1\/3 of their waking hours cleaning themselves.","length":64}'
+  recorded_at: 2018-07-27 01:25:10 GMT
+  recorded_with: vcr/0.1.0.9100, webmockr/0.2.6.9326
