@@ -9,6 +9,7 @@ Authors@R: c(
 License: MIT + file LICENSE
 URL: https://github.com/sckott/catfact
 Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
 Imports:
     httr
 Suggests:
