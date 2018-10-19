@@ -1,7 +1,7 @@
 Package: catfact
 Title: Get HTTP Cat Status Images
 Description: Get HTTP Cat Status Images.
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"), 
         email = "myrmecocystus@gmail.com")
@@ -12,7 +12,6 @@ Roxygen: list(markdown = TRUE)
 Imports:
     httr
 Suggests:
-    vcr,
+    vcr (>= 0.2.0),
     testthat
-Remotes: ropensci/vcr@httr-integration
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0

@@ -18,9 +18,9 @@ http_interactions:
       connection: keep-alive
       vary: Accept-Encoding
       cache-control: no-cache, private
-      date: Fri, 27 Jul 2018 01:55:17 GMT
+      date: Fri, 19 Oct 2018 19:01:20 GMT
       x-ratelimit-limit: '300'
-      x-ratelimit-remaining: '291'
+      x-ratelimit-remaining: '286'
       x-frame-options: SAMEORIGIN
       x-xss-protection: 1; mode=block
       x-content-type-options: nosniff
@@ -29,5 +29,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: e30=
-  recorded_at: 2018-07-27 01:55:17 GMT
-  recorded_with: vcr/0.1.0.9100, webmockr/0.2.6.9326
+  recorded_at: 2018-10-19 19:01:20 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8.9100
