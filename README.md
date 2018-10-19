@@ -14,7 +14,7 @@ Get a random cat fact from the Cat Fact API <https://catfact.ninja/>
 
 Package to demonstrate using [vcr][] for unit test caching in an R package that uses [httr][].
 
-[vcr][] was originally built with support only for the [crul][] package - we are working on support in `vcr` for both [httr][] and [curl][]
+[vcr][] was originally built with support only for the [crul][] package - but now also supports [httr][]. Support for [curl][] is in the works.
 
 ## install
 
@@ -34,10 +34,10 @@ library(catfact)
 ```r
 cat_fact()
 #> $fact
-#> [1] "Cats spend nearly 1/3 of their waking hours cleaning themselves."
+#> [1] "Cats eat grass to aid their digestion and to help them get rid of any fur in their stomachs."
 #> 
 #> $length
-#> [1] 64
+#> [1] 92
 ```
 
 
