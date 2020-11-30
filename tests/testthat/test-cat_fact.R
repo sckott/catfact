@@ -12,7 +12,7 @@ test_that("cat_fact works", {
 })
 
 test_that("cat_fact length works", {
-  vcr::use_cassette("cat_fact_lengths", {
+  vcr::use_cassette(name="cat_fact_lengths", {
       expect_lte(cat_fact(30)$length, 30)
       expect_lte(cat_fact(80)$length, 80)
       expect_lte(cat_fact(120)$length, 120)
@@ -24,7 +24,8 @@ test_that("cat_fact length works", {
 })
 
 test_that("cat_fact error behavior", {
-  vcr::use_cassette("cat_fact_zero", {
+  library(vcr)
+  use_cassette("cat_fact_zero", {
       aa <- cat_fact(max_length = 0)
 
       expect_is(aa, "list")
@@ -37,3 +38,14 @@ test_that("cat_fact error behavior", {
   expect_error(cat_fact(max_length = 'foobar'))
 })
 
+test_that("cat_fact works", {
+  name <- "foo_bar"
+  vcr::use_cassette(name, {
+    aa <- cat_fact()
+
+    expect_is(aa, "list")
+    expect_named(aa, c('fact', 'length'))
+    expect_is(aa$fact, 'character')
+    expect_type(aa$length, 'integer')
+  })
+})
