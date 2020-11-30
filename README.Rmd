@@ -10,8 +10,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Build Status](https://travis-ci.org/sckott/catfact.svg?branch=master)](https://travis-ci.org/sckott/catfact)
-
 `catfact` package
 
 Get a random cat fact from the Cat Fact API <https://catfact.ninja/>
